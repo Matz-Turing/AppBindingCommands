@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBindingCommands.MainPage">
+
+	<VerticalStackLayout Padding="30">
+
+		<!-- Label para exibir as informações das Preferences -->
+		<Label x:Name="lblInfo"
+               Text="Aguardando ação..."
+               FontSize="18"
+               TextColor="Black"
+               HorizontalOptions="Center" />
+
+		<!-- Botão para acionar o evento e exibir os dados das Preferences -->
+		<Button Text="Recuperar Informações"
+                Clicked="OnRetrievePreferencesClicked"
+                BackgroundColor="Blue"
+                TextColor="White"
+                HorizontalOptions="Center"
+                Padding="10"/>
+
+	</VerticalStackLayout>
+</ContentPage>

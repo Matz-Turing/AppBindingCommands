@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBindingCommands.Views.UsuarioView"
+             Title="Usuário">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <!-- Campo de entrada para o nome do usuário -->
+        <Entry Placeholder="Digite seu nome"
+       Text="{Binding Name}"
+       FontSize="18"
+       TextColor="Black"
+       BackgroundColor="White"
+       Margin="10" />
+        <!-- Replace Padding with Margin -->
+
+        <!-- Label que reflete o nome digitado -->
+        <Label Text="{Binding DisplayName}"
+               FontSize="20"
+               TextColor="Blue"
+               HorizontalOptions="Center" />
+
+        <!-- Botão para exibir mensagem -->
+        <Button Text="Mostrar Mensagem"
+                Command="{Binding ShowMessageCommand}"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Padding="10"
+                HorizontalOptions="Center" />
+
+        <!-- Label para exibir a mensagem ao usuário -->
+        <Label Text="{Binding DisplayMessage}"
+               FontSize="18"
+               TextColor="Green"
+               HorizontalOptions="Center" />
+
+        <!-- Botão para contar caracteres -->
+        <Button Text="Contar Caracteres"
+                Command="{Binding CountCommand}"
+                BackgroundColor="Green"
+                TextColor="White"
+                Padding="10"
+                HorizontalOptions="Center" />
+
+        <!-- Botão para limpar campos -->
+        <Button Text="Limpar Campos"
+                Command="{Binding CleanCommand}"
+                BackgroundColor="Red"
+                TextColor="White"
+                Padding="10"
+                HorizontalOptions="Center" />
+
+        <!-- Botão para mostrar opções -->
+        <Button Text="Mostrar Opções"
+                Command="{Binding OptionCommand}"
+                BackgroundColor="Purple"
+                TextColor="White"
+                Padding="10"
+                HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
