@@ -27,5 +27,4 @@ Este projeto serve como um tutorial prático para desenvolvedores que estão apr
 
 ## Créditos
 
-Desenvolvido por Mateus S.  
-GitHub: [Matz-Turing](https://github.com/Matz-Turing)
+Desenvolvido por Mateus S. & Guilherme Barros Pereira
